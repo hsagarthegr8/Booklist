@@ -1,0 +1,16 @@
+<table border=1 *ngIf="booklist.length">
+  <thead>
+    <th>Book ID</th>
+    <th>Book Title</th>
+    <th>Book Author</th>
+    <th>Book Year of Publish</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of booklist">
+      <td>{{book.id}}</td>
+      <td>{{book.title}}</td>      
+      <td>{{book.author}}</td>
+      <td>{{book.year}}</td>
+    </tr>
+  </tbody>
+</table>
